@@ -1,5 +1,6 @@
 package GitCICD.CICDintegration;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -11,7 +12,8 @@ public class GitCICD {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get("https://www.google.com/");
-		driver.close();
+		driver.findElement(By.name("q")).sendKeys("selenium automation");
+		//driver.close();
 
 	}
 
